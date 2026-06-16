@@ -1,20 +1,20 @@
-
-from unittest import result
-
+# runner/test_runner.py
 
 def add(a, b):
-  return a + b
+    return a + b
 
 def run_tests(test_cases):
-  results = []
+    results = []
 
-  for case in test_cases:
-    actual = add(*case["input"])
-    success = actual == case["expected"]
+    for case in test_cases:
+        actual = add(*case["input"])
+        success = actual == case["expected"]
 
-    results.append({"input": case["input"], "expected": case["expected"], "actual": actual, "success": success})
+        results.append({
+            "name": case["name"],
+            "expected": case["expected"],
+            "actual": actual,
+            "success": success
+        })
 
-  return results
-
-
-
+    return results
