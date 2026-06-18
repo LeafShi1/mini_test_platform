@@ -20,7 +20,7 @@ def generate_report(results, summary, output_file):
 
             status =("PASS" if r["success"] else 'FAIL')
 
-            f.write(f"{r['name']}: {status}")
+            f.write(f"{r['name']}: {status} {r['duration']:.3f}s")
             f.write("</p>")
 
         f.write("</body></html>")

@@ -41,7 +41,9 @@
     <Folder Include="runner\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".gitignore" />
     <Content Include="config.yaml" />
+    <Content Include="README.md" />
     <Content Include="tests\test_cases.json" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
