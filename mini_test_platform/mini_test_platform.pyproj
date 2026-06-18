@@ -27,12 +27,14 @@
     <Compile Include="main.py" />
     <Compile Include="reporter\html_reporter.py" />
     <Compile Include="runner\test_runner.py" />
+    <Compile Include="utils\statistics.py" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="loader\" />
     <Folder Include="logs\" />
     <Folder Include="config\" />
     <Folder Include="logger\" />
+    <Folder Include="utils\" />
     <Folder Include="reports\" />
     <Folder Include="tests\" />
     <Folder Include="reporter\" />

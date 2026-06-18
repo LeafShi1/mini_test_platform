@@ -2,6 +2,7 @@
 import sys
 
 from logging import config
+from utils.statistics import build_summary
 import time
 
 from config.config_loader import load_config
@@ -32,10 +33,12 @@ def main():
     tests = load_tests(test_case_path)
     results = run_tests(tests)
 
-    end_time= time.time()
+    end_time = time.time()
     duration = end_time - start_time
 
-    generate_report(results, output_file , duration)
+    summary = build_summary(results, duration)
+
+    generate_report(results, summary, output_file)
 
 if __name__ == "__main__":
     main()
