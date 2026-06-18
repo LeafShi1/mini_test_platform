@@ -7,7 +7,12 @@
   {
     "name": "test_add_fail",
     "input": [ 2, 2 ],
-    "expected":  5
+    "expected": 5
+  },
+  {
+    "name": "test_subtract",
+    "input": [ 5, 3 ],
+    "expected": 2
   }
 ]
 

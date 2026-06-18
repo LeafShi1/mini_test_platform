@@ -1,0 +1,10 @@
+
+test_case_path: "tests/test_cases.json"
+
+report:
+   output_dir: reports
+   report_name: report.html
+
+log:
+  level: INFO
+  log_file: logs/test.log
